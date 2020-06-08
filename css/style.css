@@ -1,3 +1,197 @@
-body {
-   font-family: "Montserrat-Regular", serif; 
+html,  body  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family:  "Montserrat-Regular",  serif;
+  height:  100%;
+  width: 100%;
+  color: #000;
+}
+
+.wrapper  {
+  min-height: 100vh;
+  display:  flex;
+  flex-direction:  column;
+  background-color: #FAEBD7;
+  overflow: hidden;
+}
+
+.fullscreen  {
+  background-color: #98FB98;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header  {
+  position:  fixed;
+  display:  flex;
+  width: 100%;
+  max-width: 1337px;
+  justify-content: space-between;
+  align-items:  center;
+  top:  24px;
+  left: 0;
+  background-color: #FFC0CB;
+  z-index: 50;
+}
+
+/*
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    z-index: 50;
+}
+*/
+
+.header__logo  {
+  position:  relative;
+  width:  166px;
+  height:  51px;
+  padding-left: 42.72px;
+  padding-top: 0px;
+}
+
+.header__menu  {
+  position:  relative;
+  min-width:  495px;
+  padding-left: 258.14px;
+  padding-right: 221.14px;
+  display: flex;
+  justify-content:  space-between;
+}
+
+.header__link  {
+  text-decoration:  none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.header__link_active  {
+  color:  #E51937;
+  width: 62px;
+  border-bottom:  2px  solid;
+}
+
+.header__link:nth-child(2)  {
+  padding:  0px  24.86px  0px  63.14px;
+}
+.header__link:nth-child(4)  {
+  padding:  0px  44px  0px  46px;
+}
+.header__shop  {
+  display: flex;
+  justify-content: space-between;
+  min-width: 148px;
+}
+.header__button  {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+.header__burger  {
+  display: flex;
+  width: 24px;
+  height: 15px;
+  align-items: center;
+  padding-right: 60px;
+}
+.header__burger-line  {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background: #E51937;
+}
+
+.header__burger-line::before {
+    content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: -5px;
+	left: 0;
+	background: #E51937;
+}
+
+.header__burger-line::after {
+    content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 5px;
+	left: 0;
+	background: #E51937;
+}
+
+.welcome  {
+
+}
+
+.welcome__car{
+}
+.welcome__title {
+  z-index: 1;
+  position: absolute;
+  width: 370px;
+  height: 110px;
+  left: 535px;
+  top: 66px;
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 110px;
+  color: #000;
+}
+
+.welcome__text  {
+  z-index: 1;
+  position: absolute;
+  width: 241px;
+  height: 19px;
+  left: 600px;
+  top: 233px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.welcome__logo-car  {
+  position: relative;
+  width: 1514px;
+  height: 594px;
+  left: -74px;
+  top: 134px;
+}
+
+.welcome__footer  {
+  
+
+.speed-menu  {
+  
+}
+.power-reserv{
+ 
+}
+.test-drive{
+  
+}
+
+.welcome__godown  {
+  
+}
+
+.welcome__logo-car{
+  
 }
