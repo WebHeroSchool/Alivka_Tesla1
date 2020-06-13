@@ -53,6 +53,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 118.5px;
 }
 
 .header__link {
@@ -61,18 +62,16 @@ html, body {
   font-size: 15px;
   line-height: 18px;
   color: #000;
-  
   background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
 }
 
 .header__link:hover {
   color: #E51937;
   cursor: pointer;
-  
   background-size: 100% 2px;
 }
 
@@ -83,10 +82,10 @@ html, body {
 }
 
 .header__link:nth-child(2) {
-  padding: 0px 24.86px 0px 63.14px;
+  padding: 0px 20px 0px 57px;
 }
 .header__link:nth-child(4) {
-  padding: 0px 44px 0px 46px;
+  padding: 0px 42px 0px 40px;
 }
 
 .header__inner {
@@ -155,6 +154,7 @@ html, body {
 
 .welcome  {
   margin: 0;
+  min-height: 767px;
   background-image: url(../img/welcome/tesla-logo-car.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -195,10 +195,11 @@ html, body {
 
 .welcome__footer {
   max-width: 758.52px;
+  width: 758.52px;
   height: 58px;
   display: flex;
   justify-content: space-between;
-  padding-top: 502px;
+  margin-top: auto;
 }
 
 .welcome__inner {
@@ -319,7 +320,6 @@ html, body {
   justify-content: space-between;
   align-items: center;
   max-width: 318px;
-  padding-left: 105px;
   background-color: #FFE4B5;
 }
 
@@ -361,24 +361,35 @@ html, body {
 }
 
 .welcome__godown {
+/*  position: absolute;*/
   margin: 0;
   display: flex;
   justify-content: center;
-  padding-top: 37px;
   width: 28px;
   height: 14px;
   cursor: pointer;
+  }
+
+.welcome__godown img {
+  position: absolute;
+  animation: animate 1.5s infinite;
+  animation-timing-function: linear;
+}
+
+.welcome__godown img:hover {
+  position: absolute;
   animation: animate 1s infinite;
   animation-timing-function: linear;
 }
+
 @keyframes animate {
   0% {
-    margin-top: 20px;
+    margin-top: 2px;
   }
   50% {
-    margin-top: 0px;
+    margin-top: 10px;
   }
   100% {
-    margin-top: 20px;
+    margin-top: 2px;
   }
 }
