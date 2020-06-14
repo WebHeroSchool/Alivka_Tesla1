@@ -19,12 +19,12 @@ html, body {
 .header {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+/*  justify-content: space-between;*/
   align-items: center;
   width: 100%;
   height: 51px;
-  max-width: 1337px;
-  padding: 24px 60px 0px 42.72px;
+  max-width: 1338px;
+  padding: 24px 60px 0px 41px;
 }
 
 /*
@@ -49,11 +49,11 @@ html, body {
 
 .header__menu  {
   position: relative;
-  min-width: 495px;
+  min-width: 489px;
   display: flex;
-  justify-content: space-between;
+/*  justify-content: space-between;*/
   align-items: center;
-  padding-left: 118.5px;
+  padding-left: 260px;
 }
 
 .header__link {
@@ -67,38 +67,43 @@ html, body {
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size .3s;
+  line-height: 33px;
 }
 
 .header__link:hover {
   color: #E51937;
   cursor: pointer;
   background-size: 100% 2px;
+  line-height: 33px;
 }
 
 .header__link_active {
   color: #E51937;
   width: 62px;
   border-bottom: 2px solid;
+  line-height: 33px;
 }
 
 .header__link:nth-child(2) {
-  padding: 0px 20px 0px 57px;
+  padding: 0px 24.86px 0px 63.14px;
 }
+
 .header__link:nth-child(4) {
-  padding: 0px 42px 0px 40px;
+  padding: 0px 48px 0px 46px;
 }
 
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 200px;
+  min-width: 203px;
+  padding-left: 100px;
 }
 
 .header__shop {
   display: flex;
   justify-content: space-between;
-  min-width: 148px;
+  min-width: 179px;
 }
 
 .header__button {
@@ -109,6 +114,7 @@ html, body {
   line-height: 18px;
   color: #000;
   cursor: pointer;
+  padding: 0px 34px 0px 34px;
 }
 
 .header__button:hover {
@@ -124,6 +130,7 @@ html, body {
 }
 
 .header__burger-line {
+  margin: 0;
   position: relative;
   width: 24px;
   height: 2px;
@@ -136,7 +143,7 @@ html, body {
 	display: block;
 	width: 100%;
 	height: 100%;
-	top: -5px;
+	top: -5.5px;
 	left: 0;
 	background: #E51937;
 }
@@ -147,30 +154,30 @@ html, body {
 	display: block;
 	width: 100%;
 	height: 100%;
-	top: 5px;
+	top: 5.5px;
 	left: 0;
 	background: #E51937;
 }
 
 .welcome  {
   margin: 0;
-  min-height: 767px;
+  min-height: 766px;
   background-image: url(../img/welcome/tesla-logo-car.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0px 58px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   padding-top: 58px;
   flex: 1 1 auto;
-  max-height: 729px;
 }
 
 .welcome__future {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 175px;
 }
 
 .welcome__title {
@@ -194,12 +201,13 @@ html, body {
 }
 
 .welcome__footer {
-  max-width: 758.52px;
-  width: 758.52px;
+  max-width: 798px;
+  width: 798px;
   height: 58px;
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  padding-bottom: 31px;
 }
 
 .welcome__inner {
@@ -219,8 +227,8 @@ html, body {
 }
 
 .speed-menu__image {
-  width: 34.13px;
-  height: 46px;
+  width: 57.13px;
+  height: 76px;
   flex: 0 0 34.13px;
   max-width: 100%;
 }
@@ -230,7 +238,7 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 14px;
+  padding-left: 5px;
 }
 
 .speed-menu__title {
@@ -245,7 +253,7 @@ html, body {
 
 .speed-menu__subtitle {
   margin: 0;
-  padding: 16px 0px 1px 6px;
+  padding: 16px 0px 0px 7px;
   width: 37px;
   height: 25px;
   font-weight: 600;
@@ -368,6 +376,7 @@ html, body {
   width: 28px;
   height: 14px;
   cursor: pointer;
+  padding-bottom: 40px;
   }
 
 .welcome__godown img {
