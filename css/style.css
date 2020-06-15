@@ -29,14 +29,14 @@ html, body {
 
 /*
 .header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #808080;
-    z-index: 50;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #808080;
+  z-index: 50;
 }
 */
 
@@ -51,7 +51,7 @@ html, body {
   position: relative;
   min-width: 489px;
   display: flex;
-/*  justify-content: space-between;*/
+  justify-content: space-between;
   align-items: center;
   padding-left: 145px;
 }
@@ -60,7 +60,6 @@ html, body {
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
-  line-height: 18px;
   color: #000;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
@@ -97,16 +96,20 @@ html, body {
   align-items: center;
   justify-content: space-between;
   min-width: 203px;
+  width: 203px;
   padding-left: 100px;
 }
 
 .header__shop {
   display: flex;
   justify-content: space-between;
-  min-width: 179px;
+  align-items: center;
+  min-width: 149px;
 }
 
 .header__button {
+  height: 25px;
+  width: 55px;
   border: none;
   background: transparent;
   font-weight: 600;
@@ -114,7 +117,6 @@ html, body {
   line-height: 18px;
   color: #000;
   cursor: pointer;
-  padding: 0px 34px 0px 34px;
 }
 
 .header__button:hover {
@@ -127,6 +129,7 @@ html, body {
   width: 24px;
   height: 15px;
   align-items: center;
+  padding-left: 35px;
 }
 
 .header__burger-line {
@@ -149,17 +152,17 @@ html, body {
 }
 
 .header__burger-line::after {
-    content: '';
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 100%;
-	top: 5.5px;
-	left: 0;
-	background: #E51937;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 5.5px;
+  left: 0;
+  background: #E51937;
 }
 
-.welcome  {
+.welcome {
   margin: 0;
   min-height: 766px;
   background-image: url(../img/welcome/tesla-logo-car.jpg);
@@ -187,6 +190,7 @@ html, body {
   font-weight: 600;
   font-size: 90px;
   line-height: 110px;
+  letter-spacing: 1.3px;
   color: #000;
 }
 
@@ -222,7 +226,6 @@ html, body {
   align-items: center;
   width: 154px;
   height: 56px;
-  background-color: #AFEEEE;
 }
 
 .speed-menu__image {
@@ -237,7 +240,7 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 .speed-menu__title {
@@ -252,7 +255,7 @@ html, body {
 
 .speed-menu__subtitle {
   margin: 0;
-  padding: 16px 0px 0px 7px;
+  padding: 15px 0px 0px 7px;
   width: 37px;
   height: 25px;
   font-weight: 600;
@@ -270,19 +273,19 @@ html, body {
 
 .power-reserv {
   margin: 0;
-  padding-left: 81px;
+  padding-left: 77px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 140px;
   height: 58px;
-  background-color: #FFC0CB;
 }
 
 .power-reserv__image {
-  width: 30.5px;
-  height: 50px;
-  flex: 0 0 30.5px;
+  padding-top: 10px;
+  width: 40px;
+/*  height: 55px;*/
+  flex: 0 0 40px;
   max-width: 100%;
 }
 
@@ -292,7 +295,7 @@ html, body {
   justify-content: flex-start;
   width: 140px;
   height: 58px;
-  padding-left: 11px;
+  padding-left: 8px;
 }
 
 .power-reserv__title {
@@ -327,7 +330,6 @@ html, body {
   justify-content: space-between;
   align-items: center;
   max-width: 318px;
-  background-color: #FFE4B5;
 }
 
 .test-drive__image {
@@ -358,6 +360,7 @@ html, body {
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -368,7 +371,6 @@ html, body {
 }
 
 .welcome__godown {
-/*  position: absolute;*/
   margin: 0;
   display: flex;
   justify-content: center;
@@ -376,7 +378,7 @@ html, body {
   height: 14px;
   cursor: pointer;
   padding-bottom: 40px;
-  }
+}
 
 .welcome__godown img {
   position: absolute;
