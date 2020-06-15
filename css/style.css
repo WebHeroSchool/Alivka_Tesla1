@@ -13,7 +13,6 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .header {
@@ -84,11 +83,11 @@ html, body {
 }
 
 .header__link:nth-child(2) {
-  padding: 0px 24.86px 0px 63.14px;
+  margin: 0px 24.86px 0px 63.14px;
 }
 
 .header__link:nth-child(4) {
-  padding: 0px 48px 0px 46px;
+  margin: 0px 48px 0px 46px;
 }
 
 .header__inner {
@@ -402,4 +401,61 @@ html, body {
   100% {
     margin-top: 2px;
   }
+}
+
+.about-s {
+  margin: 0;
+  min-height: 900px;
+  background-image: url(../img/aboutS/tesla-cockpit.jpg);
+  background-repeat: no-repeat;
+  background-position: 29% 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+/*  flex: 1 1 auto;*/
+}
+
+.about-s__photo-cockpit {
+  width: 1000px;
+}
+
+.about-s__title {
+  width: 288px;
+  height: 86px;
+  padding: 56px 0px 0px 80px;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 85px;
+  color: #E51937;
+}
+
+.about-s__column {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 440px;
+  height: 900px;
+  background-image: url(../img/aboutS/rectangle.jpg);
+  background-repeat: no-repeat;
+}
+
+.about-s__block 
+
+.future__about-s {
+  padding: 51px 72px 0px 52px;
+}
+
+.future__about-s-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFF;
+}
+
+.future__about-s-text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFF;
 }
