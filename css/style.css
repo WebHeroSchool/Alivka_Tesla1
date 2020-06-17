@@ -444,17 +444,18 @@ html, body {
 .about-s__block 
 
 .future__about-s {
-  padding: 23px 72px 0px 52px;
+  padding: 53px 72px 0px 54px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .future__about-s-title {
+  margin: 0;
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
-  letter-spacing: .65px;
+  letter-spacing: .5px;
   color: #FFF;
 }
 
