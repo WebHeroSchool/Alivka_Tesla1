@@ -412,7 +412,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-/*  flex: 1 1 auto;*/
+  flex: 1 1 auto;
 }
 
 .about-s__photo-cockpit {
@@ -422,11 +422,12 @@ html, body {
 .about-s__title {
   width: 288px;
   height: 86px;
-  padding: 56px 0px 0px 80px;
+  padding: 8px 0px 0px 188px;
   font-weight: 600;
   font-size: 70px;
   line-height: 85px;
   color: #E51937;
+  letter-spacing: 1px;
 }
 
 .about-s__column {
@@ -443,13 +444,17 @@ html, body {
 .about-s__block 
 
 .future__about-s {
-  padding: 51px 72px 0px 52px;
+  padding: 23px 72px 0px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .future__about-s-title {
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
+  letter-spacing: .65px;
   color: #FFF;
 }
 
