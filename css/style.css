@@ -406,21 +406,21 @@ html, body {
 .about-s {
   margin: 0;
   min-height: 900px;
-  background-image: url(../img/aboutS/tesla-cockpit.jpg);
-  background-repeat: no-repeat;
-  background-position: 29% 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .about-s__photo-cockpit {
-  width: 1000px;
+  max-width: 1000px;
+  background-image: url(../img/aboutS/tesla-cockpit.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 
 .about-s__title {
   width: 288px;
   height: 86px;
-  padding: 8px 0px 0px 188px;
+  padding: 8px 0px 0px 83px;
   font-weight: 600;
   font-size: 70px;
   line-height: 85px;
@@ -429,23 +429,24 @@ html, body {
 }
 
 .about-s__column {
+  background-image: url(../img/aboutS/rectangle.jpg);
+  background-repeat: no-repeat;
 }
 
 .about-s__block {
-  margin: 0 auto;
+  width: 440px;
+  max-height: 900px;
+  margin: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 440px;
-  height: 900px;
-  background-image: url(../img/aboutS/rectangle.jpg);
-  background-repeat: no-repeat;
+  padding: 52px 0px 0px 52px;
 }
 
 .future__about-s {
   width: 316px;
   height: 254px;
-  padding: 53px 72px 0px 54px;
 }
 
 .future__about-s-title {
@@ -471,19 +472,112 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
   width: 269px;
-  height: 267px;
-  padding: 54px 123px 0px 48px;
+  padding-top: 54px;
+  flex: 1 1 auto;
 }
 
 .about-s__advantage {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1 1 auto;
+}
+
+.about-s__screen {
+  padding-left: 19px;
+}
+
+.about-s__screen-title {
+  display: flex;
+  margin: 0;
+  width: 35px;
+  height: 43px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+  color: #FFF
+}
+
+.about-s__screen-subtitle {
+  margin: 0;
+  padding: 15px 0px 0px 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFF
+}
+
+.about-s__screen-small {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFF
+}
+
+.about-s__wifi {
+  padding-left: 20px;
+  
+}
+
+.about-s__wifi-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  color: #FFF
+}
+
+.about-s__wifi_subtext {
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFF
+}
+
+.about-s__bag {
+  padding-left: 24px;
+}
+
+.about-s__bag-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+  color: #FFF
+}
+
+.about-s__bag-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFF
+}
+
+.about-s__bag_small {
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFF
 }
 
 .about-s__learn-more {
   display: flex;
   justify-content: space-between;
-  padding: 0px 44px 63px 49px;
+  align-items: center;
   width: 347px;
   height: 40px;
+}
+
+.about-s__learn-more-title {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.about-s__learn-more-button {
+  width: 160px;
+  height: 40px;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  background: #E51937;
+  color: #fff;
 }
