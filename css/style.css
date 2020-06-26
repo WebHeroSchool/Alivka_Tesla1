@@ -446,10 +446,10 @@ html, body {
   padding: 51px 44px 0px 52px;
 }
 
-.future__about-s {
+.about-s__future {
 }
 
-.future__about-s-title {
+.about-s__future-title {
   margin: 0;
   font-weight: 600;
   font-size: 30px;
@@ -458,7 +458,7 @@ html, body {
   color: #FFF;
 }
 
-.future__about-s-text {
+.about-s__future-text {
   margin: 0;
   padding-top: 11px;
   font-weight: 500;
@@ -634,11 +634,11 @@ html, body {
   box-sizing: border-box;
 }
 
-.item__safety {
+.safety__item {
   margin-bottom: 53px;
 }
 
-.item__safety-title {
+.safety__item-title {
   margin: 0;
   font-weight: 600;
   font-size: 30px;
@@ -646,7 +646,7 @@ html, body {
   color: #FFF
 }
 
-.item__safety-text {
+.safety__item-text {
   margin: 16px 0 0 0;
   font-weight: 500;
   font-size: 15px;
@@ -655,13 +655,13 @@ html, body {
   color: #FFF
 }
 
-.protection__safety {
+.safety__protection {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.protection__safety-title {
+.safety__protection-title {
   margin: 0 0 29px 0;
   font-weight: 600;
   font-size: 30px;
@@ -669,7 +669,7 @@ html, body {
   color: #FFF
 }
 
-.protection__safety-block {
+.safety__protection-block {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 95px;
@@ -719,18 +719,18 @@ html, body {
   padding-left: 4px;
   }
 
-.security__safety {
+.safety__security {
   display: flex;
   width: 280px;
   height: 92px;
   margin: 0 0 45px 9px;  
 }
 
-.safety .security__safety img {
+.security__safety img {
   margin-bottom: 10px;
 }
 
-.security__safety-title {
+.safety__security-title {
   width: 195px;
   height: 92px;
   display: flex;
@@ -745,7 +745,7 @@ html, body {
   color: #FFF
 }
 
-.security__safety-text {
+.safety__security-text {
   width: 187px;
   height: 31px;
   margin: -10px 0 0 0;
@@ -755,16 +755,17 @@ html, body {
   color: #FFF
 }
 
-.learn-more__safety {
+.safety__learn-more {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 -6px 60px -20px;
 }
-.safety .learn-more__safety img {
+
+.learn-more__safety img {
 }
 
-.learn-more__safety-title {
+.safety__learn-more-title {
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
@@ -774,7 +775,7 @@ html, body {
   margin-left: -22px;
 }
 
-.learn-more__safety-button {
+.safety__learn-more-button {
   width: 160px;
   height: 40px;
   border: 2px solid #FFF;
@@ -791,34 +792,33 @@ html, body {
 }
 
 .safety__models {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 1000px;
   height: 900px;
   max-width: 100%;
-  display: flex;
   flex: 1 1 auto;
   background: url(../img/safety/model-s.jpg) 100% 19%/contain no-repeat;
 }
 
 .safety__frame {
   position: absolute;
-  width: 1049px;
+  width: 100%;
   height: 592px;
-  max-width: 100%;
   display: flex;
   background: url(../img/safety/car-frame-group.svg) 50%/contain no-repeat;
   top: 171px;
   flex: 1 1 auto;
-  margin: 0px 0px 137px -67px;
+  margin: 0px 0px 137px -85px;
 }
 
-.whs {
+.safety__whs {
   display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
   width: 93.13px;
   height: 37.77px;
-  background-image: url(../img/safety/whs.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background: url(../img/safety/whs.jpg) 100% center no-repeat;
   margin: auto 17px 12.44px 0px;
 }
