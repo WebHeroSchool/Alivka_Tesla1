@@ -1,12 +1,13 @@
 html, body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
   font-family: "Montserrat-Regular", serif;
   height: 100%;
   width: 100%;
   color: #000;
+/*  min-width: 360px;*/
+/*  max-width: 3000px;*/
 }
 
 .wrapper {
@@ -17,6 +18,7 @@ html, body {
 
 .header {
   margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -810,14 +812,14 @@ html, body {
   flex: 1 1 auto;
   margin: 0;
   position: absolute;
-  width: 100%;
+  width: calc(100% + 95px);
   max-width: 1049px;
   height: 592px;
   background-image: url(../img/safety/car-frame-group.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
-  background-size: 105%;
-  left: -44px;
+  background-size: 100%;
+  left: -95px;
   top: 170px;
 }
 
@@ -831,6 +833,7 @@ html, body {
   margin: auto 15px 12px 0;
 }
 
+/*
 @media (max-width:1024px) {
   .header__menu {
     display: none;
@@ -838,4 +841,4 @@ html, body {
   .header__shop {
     display: none;
   }
-}
+}*/
