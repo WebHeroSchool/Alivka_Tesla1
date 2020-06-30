@@ -1,16 +1,15 @@
 html, body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   font-family: "Montserrat-Regular", serif;
-  height: 100%;
   width: 100%;
   color: #000;
-/*  min-width: 360px;*/
-/*  max-width: 3000px;*/
 }
 
 .wrapper {
+  border: 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,10 +21,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 51px;
-  max-width: 1338px;
-  padding: 24px 60px 0px 41px;
+  width: calc(100% - 105px);
+  margin: 22px 60px 54px 45px;
 }
 
 /*
@@ -44,17 +41,13 @@ html, body {
 .header__logo {
   margin: 0;
   position: relative;
-  width: 166px;
-  height: 51px;
 }
 
 .header__menu  {
   position: relative;
-  min-width: 489px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 145px;
 }
 
 .header__link {
@@ -79,7 +72,6 @@ html, body {
 
 .header__link_active {
   color: #E51937;
-  width: 62px;
   border-bottom: 2px solid;
   line-height: 33px;
 }
@@ -96,28 +88,29 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 203px;
-  width: 203px;
-  padding-left: 100px;
+/*  min-width: 203px;*/
 }
 
 .header__shop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 149px;
+/*  min-width: 149px;*/
 }
 
 .header__button {
-  height: 25px;
-  width: 55px;
-  border: none;
-  background: transparent;
+  font-family: Montserrat;
+  font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   color: #000;
   cursor: pointer;
+  height: 25px;
+  width: 55px;
+  border: none;
+  background: transparent;
+  
 }
 
 .header__button:hover {
@@ -130,7 +123,7 @@ html, body {
   width: 24px;
   height: 15px;
   align-items: center;
-  padding-left: 35px;
+/*  padding-left: 35px;*/
 }
 
 .header__burger-line {
@@ -168,12 +161,12 @@ html, body {
   min-height: 766px;
   background-image: url(../img/welcome/tesla-logo-car.jpg);
   background-repeat: no-repeat;
-  background-position: center 25%;
+  background-position: top center;
+  background-size: contain;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding-top: 58px;
   flex: 1 1 auto;
 }
 
@@ -196,7 +189,7 @@ html, body {
 }
 
 .welcome__text {
-  margin: -10px 0px 0px 0px;
+  margin: -5px 0px 0px 0px;
   width: 241px;
   height: 19px;
   font-weight: 500;
@@ -358,6 +351,8 @@ html, body {
   background-color: #fff;
   width: 160px;
   height: 40px;
+  font-family: Montserrat;
+  font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
@@ -812,15 +807,15 @@ html, body {
   flex: 1 1 auto;
   margin: 0;
   position: absolute;
-  width: calc(100% + 95px);
+  width: calc(100% + 92px);
   max-width: 1049px;
   height: 592px;
   background-image: url(../img/safety/car-frame-group.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-size: 100%;
-  left: -95px;
-  top: 170px;
+  left: -92px;
+  top: 175px;
 }
 
 .safety__whs {
@@ -833,6 +828,7 @@ html, body {
   margin: auto 15px 12px 0;
 }
 
+
 /*
 @media (max-width:1024px) {
   .header__menu {
@@ -841,4 +837,5 @@ html, body {
   .header__shop {
     display: none;
   }
-}*/
+}
+*/
