@@ -1,4 +1,4 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,7 +9,6 @@ html, body {
 }
 
 .wrapper {
-  border: 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,13 +43,14 @@ html, body {
 }
 
 .header__menu  {
+  padding-left: 25px;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__link {
+.header__link, .header__shop-link {
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
@@ -84,22 +84,25 @@ html, body {
   margin: 0px 48px 0px 46px;
 }
 
+.header__shop-link {
+  margin: 0px 22px 0px 0px;
+}
+
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-/*  min-width: 203px;*/
 }
 
 .header__shop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-/*  min-width: 149px;*/
 }
 
-.header__button {
-  font-family: Montserrat;
+.header__shop-button {
+  margin-right: 30px;
+  font-family: Montserrat-Regular;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -828,9 +831,16 @@ html, body {
   margin: auto 15px 12px 0;
 }
 
+@media (max-width:1105px) {
+  .header__link:nth-child(2) {
+  margin: 0px 25px 0px 45px;
+  }
+  .header__link:nth-child(4) {
+    margin: 0px 35px 0px 25px;
+  }
+}
 
-/*
-@media (max-width:1024px) {
+@media (max-width:1025px) {
   .header__menu {
     display: none;
   }
@@ -838,4 +848,11 @@ html, body {
     display: none;
   }
 }
-*/
+
+@media (max-width:770px) {
+  .welcome__footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+}
