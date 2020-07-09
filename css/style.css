@@ -204,7 +204,6 @@ body {
 .welcome__footer {
   max-width: 798px;
   width: 100%;
-  height: 58px;
   display: flex;
   justify-content: space-between;
   margin-top: auto;
@@ -374,13 +373,12 @@ body {
 }
 
 .welcome__godown {
-  margin: 0;
+  margin: 0 0 40px 0;
   display: flex;
   justify-content: center;
   width: 28px;
   height: 14px;
   cursor: pointer;
-  padding-bottom: 40px;
 }
 
 .welcome__godown img {
@@ -420,6 +418,7 @@ body {
   max-width: 100%;
   height: 844px;
   background-image: url(../img/aboutS/tesla-cockpit.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   flex: 1 1 auto;
   margin-top: auto;
@@ -897,11 +896,11 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: auto;
-    padding-bottom: 195px;
+    padding-bottom: 60px;
   }
   
   .welcome__inner {
-    max-width: 488px;
+    min-width: 488px;
     margin-bottom: 61px;
   }
   
@@ -967,10 +966,12 @@ body {
   }
   
   .test-drive {
-    max-width: 488px;
+    max-width: unset;
+    min-width: 420px;
   }
 
   .test-drive__image {
+    margin: 0;
     width: 32px;
     height: 35px;
     flex: 0 0 32px;
@@ -982,7 +983,8 @@ body {
 
   .test-drive__text {
     margin: 0;
-    min-width: 125px;
+    min-width: 132px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -1006,23 +1008,111 @@ body {
     cursor: pointer;
   }
   
-  
-  
   .about-s {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
   
+  .about-s__photo-cockpit {
+    background-image: url(../img/iPad/2013-tesla-model-s-cockpit.jpg);
+    background-position: center 25px;
+    background-size: auto;
+    width: 100%;
+    height: 527px;
+  }
+  
+  .about-s__title {
+    margin-left: auto;
+    padding: 35px 47px 0 0;
+  }
+  
+  .about-s__column {
+    width: 100%;
+    height: 488px;
+  }
+  
+  .about-s__block {
+    min-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 55px 80px 0 35px;
+  }
+  
+  .about-s__future {
+    flex: 0 0 50%;
+  }
+  
+  .about-s__future-text {
+    padding-top: 19px;
+    line-height: 19px;
+  }
+  
+  .about-s__advantages {
+    margin: 0;
+    flex: 0 0 50%;
+    padding-top: 0px;
+  }
+  
+  .about-s__advantage {
+    justify-content: center;
+  }
+  
+  .about-s__image-screen {
+    margin: 0;  
+  }
+  
+  .about-s__image-wifi {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-s__wifi {
+    padding: 0;
+  }
+  
+  .about-s__image-bag {
+    padding: 0;
+  }
+  
+  .about-s__learn-more {
+    margin: 0 auto;
+    
+    width: 459px;
+    padding: 0;  
+  }
+  
+  .about-s__learn-more img {
+    padding-left: 23px;
+    width: 32px;
+    height: 32px;
+    margin: 6px 5px 0 0;
+  }
+  
+  .about-s__learn-more-title {
+    margin: 5px 25px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .about-s__learn-more-button {
+    width: 220.84px;
+    height: 55.21px;
+  }
+ 
   .safety {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    height: auto;
   }
   
   .safety__models {
-    order:1;
+    width: 100%;
   }
   
   .safety__column {
-    order:2;
+    width: 100%;
+    height: 768px;
   }
 }
