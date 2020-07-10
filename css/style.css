@@ -587,8 +587,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 347px;
-  height: 40px;
-  padding-bottom: 63px;
+  padding-bottom: 60px;
 }
 
 .about-s__learn-more-title {
@@ -857,7 +856,7 @@ body {
   }
 }
 
-@media (max-width:770px) {
+@media screen and (max-width:770px) {
   .header {
     margin: 2px 35px 74px 15px;
     width: calc(100% - 50px);
@@ -909,9 +908,6 @@ body {
     width: 220.7px;
   }
   
-  .speed-menu__items {
-  }
-  
   .speed-menu__image {
     margin-right: 15px;
     width: 70px;
@@ -950,9 +946,6 @@ body {
     background-repeat: no-repeat;
   }
   
-  .power-reserv__items {
-  }
-
   .power-reserv__title {
     margin-bottom: 5px;
     font-size: 50px;
@@ -962,9 +955,6 @@ body {
     padding: 11px 0px 0px 15px;
   }
 
-  .power-reserv__text {
-  }
-  
   .test-drive {
     max-width: unset;
     min-width: 420px;
@@ -1033,64 +1023,68 @@ body {
   }
   
   .about-s__block {
-    min-width: 768px;
+    min-width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 55px 80px 0 35px;
+    justify-content: flex-start;
+    padding: 55px 0 0 0;
   }
   
   .about-s__future {
+    box-sizing: border-box;
     flex: 0 0 50%;
+    padding: 0 20px 0 35px;
   }
   
   .about-s__future-text {
-    padding-top: 19px;
-    line-height: 19px;
+    padding-top: 20px;
+    line-height: 18px;
   }
   
   .about-s__advantages {
-    margin: 0;
+    box-sizing: border-box;
     flex: 0 0 50%;
-    padding-top: 0px;
-  }
-  
-  .about-s__advantage {
-    justify-content: center;
+    margin: 0;
+    padding: 0 80px 45px 70px;
   }
   
   .about-s__image-screen {
-    margin: 0;  
+    margin: 0;
+  }
+  
+  .about-s__screen-subtitle {
+    padding: 0 0 0 10px;
   }
   
   .about-s__image-wifi {
-    margin: 0;
     padding: 0;
   }
   
   .about-s__wifi {
-    padding: 0;
+    padding: 0 0 0 19px;
   }
   
   .about-s__image-bag {
     padding: 0;
   }
   
+  .about-s__bag-title {
+    margin: 0;  
+  }
+  
   .about-s__learn-more {
     margin: 0 auto;
-    
     width: 459px;
-    padding: 0;  
+    padding: 0 0 30px 0;  
   }
   
   .about-s__learn-more img {
-    padding-left: 23px;
     width: 32px;
     height: 32px;
-    margin: 6px 5px 0 0;
   }
   
   .about-s__learn-more-title {
-    margin: 5px 25px 0 0;
+    margin: 0 35px 0 0;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
@@ -1099,6 +1093,9 @@ body {
   .about-s__learn-more-button {
     width: 220.84px;
     height: 55.21px;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    line-height: 20px;
   }
  
   .safety {
@@ -1114,5 +1111,9 @@ body {
   .safety__column {
     width: 100%;
     height: 768px;
+  }
+  
+  .safety__frame {
+    max-width: 100%;
   }
 }
