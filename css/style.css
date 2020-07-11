@@ -1191,3 +1191,68 @@ body {
     line-height: 20px;
   }
   
+  @media screen and (max-width:747px) {
+    .about-s__future {
+      padding: 0 10px 0 20px;
+    }
+    
+    .about-s__advantages {
+      padding: 0 0 45px 10px;
+    }
+    
+    .safety__item {
+      padding: 0 10px 0 20px;
+    }
+    
+    .safety__protection {
+      padding: 0 0 0 10px;
+    }
+  }
+  
+  @media screen and (max-width:688px) {
+    .about-s__advantages, .about-s__learn-more, .safety__protection, .safety__learn-more {
+      display: none;
+    }
+    
+    .about-s__column {
+      height: 350px;
+    }
+    
+    .about-s__future, .safety__item {
+      flex: 0 0 100%;
+      padding: 0 20px 0 20px
+    }
+    
+    .about-s__future-title, .safety__item-title {
+      text-align: center;
+    }
+  }
+    
+  @media screen and (max-width:440px) {
+    .header {
+      margin: 5px 40px 17px 2px;
+      width: calc(100% - 79px);
+    }
+    
+    .header__logo img {
+      width: 138px;
+      height: 42px;
+    }
+    
+    .header__burger-line {
+      width: 24px;
+    }
+    
+    .header__burger-line::before {
+      top: -6px;
+    }
+    
+    .header__burger-line::after {
+      top: 6px;
+    }
+    
+    .welcome__title {
+      font-size: 50px;
+      line-height: 61px;
+    }
+}
