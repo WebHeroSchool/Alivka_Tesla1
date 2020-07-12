@@ -183,8 +183,6 @@ body {
 .welcome__title {
   top: 0;
   margin: 0;
-  width: 370px;
-  height: 110px;
   font-weight: 600;
   font-size: 90px;
   line-height: 110px;
@@ -1210,12 +1208,16 @@ body {
   }
   
   @media screen and (max-width:688px) {
-    .about-s__advantages, .about-s__learn-more, .safety__protection, .safety__learn-more {
+    .about-s__advantages, 
+    .about-s__learn-more, 
+    .safety__protection, 
+    .safety__learn-more {
       display: none;
     }
     
-    .about-s__column {
-      height: 350px;
+    .about-s__column, .safety__column {
+      height: auto;
+      min-height: 304px;
     }
     
     .about-s__future, .safety__item {
@@ -1230,8 +1232,8 @@ body {
     
   @media screen and (max-width:440px) {
     .header {
-      margin: 5px 40px 17px 2px;
-      width: calc(100% - 79px);
+      margin: 5px 10px 17px 2px;
+      width: calc(100% - 12px);
     }
     
     .header__logo img {
@@ -1251,8 +1253,98 @@ body {
       top: 6px;
     }
     
+    .welcome {
+      background-position: center 10%;
+      min-height: 535px;
+    }
+    
     .welcome__title {
       font-size: 50px;
       line-height: 61px;
+      padding-top: 10px;
+    }
+    
+    .welcome__footer {
+      padding-bottom: 30px;
+    }
+    
+    .welcome__inner {
+      min-width: 283px;
+    }
+    
+    .speed-menu {
+      margin-right: 40px;
+      width: 127px;
+    }
+    
+    .speed-menu__image {
+      width: 40px;
+      height: 30px;
+      background-position: center;
+      background-size: 50%;
+    }
+    
+    .speed-menu__title {
+      font-size: 27px;
+      line-height: 33px;
+    }
+    
+    .speed-menu__subtitle {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    
+    .speed-menu__text {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    
+    .power-reserv {
+      width: 115px;
+    }
+    
+    .power-reserv__image {
+      width: 25.29px;
+      height: 41px;
+      background-position: center;
+      background-size: 50%;
+    }
+    
+    .power-reserv__title {
+      font-size: 27px;
+      line-height: 33px;
+    }
+    
+    .power-reserv__subtitle {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    
+    .power-reserv__text {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    
+    .test-drive {
+      min-width: 303px;
+    }
+    
+    .test-drive__image {
+      width: 22px;
+      height: 22px;
+      background-position: center;
+      background-size: 75%;
+    }
+    
+    .test-drive__text {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    
+    .test-drive__button {
+      width: 160px;
+      height: 40px;
+      font-size: 13px;
+      line-height: 16px;
     }
 }
