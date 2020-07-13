@@ -124,7 +124,6 @@ body {
 
 .header__burger {
   display: flex;
-  width: 24px;
   height: 15px;
   align-items: center;
 }
@@ -192,7 +191,6 @@ body {
 
 .welcome__text {
   margin: -5px 0px 0px 0px;
-  width: 241px;
   height: 19px;
   font-weight: 500;
   font-size: 15px;
@@ -439,7 +437,7 @@ body {
 }
 
 .about-s__block {
-  width: 440px;
+  max-width: 440px;
   max-height: 900px;
   margin: 0;
   height: 100%;
@@ -860,7 +858,6 @@ body {
   }
   
   .header__burger {
-    width: 33px;
     padding-bottom: 5px;
   }
   
@@ -1232,8 +1229,8 @@ body {
     
   @media screen and (max-width:440px) {
     .header {
-      margin: 5px 10px 17px 2px;
-      width: calc(100% - 12px);
+      margin: 5px 0 17px 2px;
+      width: calc(100% - 23px);
     }
     
     .header__logo img {
@@ -1254,8 +1251,21 @@ body {
     }
     
     .welcome {
-      background-position: center 10%;
+      background-image: url(../img/mobil/tesla_car.svg);
+      background-position: center 35%;
+      background-size: 95%;
       min-height: 535px;
+    }
+    
+    .welcome__logo {
+      width: 100%;
+      height: 139px;
+      position: absolute;
+      background-image: url(../img/mobil/tesla_logo.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      padding-top: 180px;
     }
     
     .welcome__title {
@@ -1264,29 +1274,43 @@ body {
       padding-top: 10px;
     }
     
+    .welcome__text {
+      margin: -3px 0px 0px 0px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+    
     .welcome__footer {
       padding-bottom: 30px;
     }
     
     .welcome__inner {
-      min-width: 283px;
+      min-width: 295px;
+      margin-bottom: 38px;
+      justify-content: flex-start;
     }
     
     .speed-menu {
-      margin-right: 40px;
+      margin-right: 32px;
       width: 127px;
     }
     
     .speed-menu__image {
+      margin: 0;
+      flex: 0 0 40px;
       width: 40px;
       height: 30px;
       background-position: center;
-      background-size: 50%;
+    }
+    
+    .speed-menu__items {
+      padding-left: 14px;
     }
     
     .speed-menu__title {
       font-size: 27px;
       line-height: 33px;
+      align-items: baseline;
     }
     
     .speed-menu__subtitle {
@@ -1296,7 +1320,7 @@ body {
     
     .speed-menu__text {
       font-size: 10px;
-      line-height: 12px;
+      line-height: 1px;
     }
     
     .power-reserv {
@@ -1304,47 +1328,100 @@ body {
     }
     
     .power-reserv__image {
+      margin: 0;
       width: 25.29px;
       height: 41px;
       background-position: center;
       background-size: 50%;
     }
     
+    .power-reserv__items {
+      padding-left: 4px;
+    }
+    
     .power-reserv__title {
+      margin: 0;
       font-size: 27px;
-      line-height: 33px;
     }
     
     .power-reserv__subtitle {
+      padding: 20px 0px 0px 9px;
       font-size: 15px;
       line-height: 18px;
     }
     
     .power-reserv__text {
       font-size: 10px;
-      line-height: 12px;
+      line-height: 1px;
     }
     
     .test-drive {
       min-width: 303px;
+      justify-content: flex-start;
+      margin-bottom: 1px;
     }
     
     .test-drive__image {
       width: 22px;
-      height: 22px;
+      height: 25px;
       background-position: center;
       background-size: 75%;
     }
     
     .test-drive__text {
+      min-width: 90px;
       font-size: 13px;
       line-height: 16px;
+      font-family: 'Montserrat-Bold';
+      padding-right: 20px;
     }
     
     .test-drive__button {
+      padding: 0;
+      margin: 0;
+      border: 0;
       width: 160px;
       height: 40px;
       font-size: 13px;
       line-height: 16px;
+    }
+    
+    .about-s__photo-cockpit {
+      background-image: url(../img/mobil/tesla_model-s_cockpit.jpg);
+      background-repeat: no-repeat;
+      background-position: center -40px;
+      background-size: 100%;
+      height: 288px;
+    }
+    
+    .about-s__title {
+      display: none;
+    }
+    
+    .about-s__block {
+      padding: 17px 0 0 0;
+    }
+    
+    .about-s__future {
+      padding: 0 20px 0 28px;
+    }
+    
+    .about-s__future-title {
+      text-align: unset;
+    }
+    
+    .about-s__future-text {
+      padding-top: 10px;
+    }
+    
+    .safety__models {
+      height: 294px;
+      background-image: url(../img/mobil/model_s_logo_sec3.svg);
+      background-repeat: no-repeat;
+    }
+    
+    .safety__frame {
+      background-image: url(../img/mobil/car_frame_sec3.svg);
+      background-repeat: no-repeat;
     }
 }
