@@ -881,7 +881,6 @@ body {
   .header {
     margin: 0 0 74px 0;
     padding: 2px 35px 0 15px;
-    background-color: #fff;
   }
   
   .header__burger {
@@ -1272,7 +1271,6 @@ body {
   .header {
     margin: 0 0 17px 0;
     padding: 5px 0 0 2px;
-    background-color: #fff;
   }
     
   .header__logo img {
@@ -1498,7 +1496,7 @@ body {
   }
   
   .test-drive__text {
-    padding-right: 15px;
+    padding-right: 25px;
     justify-content: space-between;
   }
 }
