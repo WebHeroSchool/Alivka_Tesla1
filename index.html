@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Tesla</title>
@@ -19,8 +20,8 @@
       </nav>
       <div class="header__inner">
         <div class="header__shop">
-          <a href="#" class="header__link">Магазин</a>
-          <button class="header__button">Войти</button>
+          <a href="#" class=".header__link header__shop-link">Магазин</a>
+          <button class="header__shop-button">Войти</button>
         </div>
         <div class="header__burger">
           <span class="header__burger-line"></span>
@@ -29,6 +30,7 @@
     </header>
     <main>
       <section class="welcome">
+        <div class="welcome__logo"></div>
         <div class="welcome__future">
           <h1 class="welcome__title">Model S</h1>
           <p class="welcome__text">Добро пожаловать в будущее!</p>
@@ -36,7 +38,7 @@
         <div class="welcome__footer">
           <div class="welcome__inner">
             <div class="speed-menu">
-              <img class="speed-menu__image" src="img/welcome/speedometer.svg" alt="speedometer">
+              <div class="speed-menu__image"></div>
               <div class="speed-menu__items">
                 <p class="speed-menu__title">2,7
                   <span class="speed-menu__subtitle">сек</span>
@@ -45,7 +47,7 @@
               </div>
             </div>
             <div class="power-reserv">
-              <img class="power-reserv__image" src="img/welcome/road-icon.svg" alt="power-reserv">
+              <div class="power-reserv__image"></div>
               <div class="power-reserv__items">
                 <p class="power-reserv__title">632
                   <span class="power-reserv__subtitle">км</span>
@@ -55,7 +57,7 @@
             </div>
           </div>
           <div class="test-drive">
-            <img class="test-drive__image" src="img/welcome/steering-wheel.svg" alt="steering-wheel">
+            <div class="test-drive__image"></div>
             <p class="test-drive__text">тест драйв</p>
             <button class="test-drive__button">заказать</button>
           </div>
@@ -70,30 +72,40 @@
         </div>
         <div class="about-s__column">
           <div class="about-s__block">
-            <div class="future__about-s">
-              <h3 class="future__about-s-title">Будущее вождения</h3>
-              <p class="future__about-s-text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+            <div class="about-s__future">
+              <h3 class="about-s__future-title">Будущее вождения</h3>
+              <p class="about-s__future-text">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
             </div>
             <div class="about-s__advantages">
               <div class="about-s__advantage">
-                <img src="img/aboutS/screen.jpg" alt="screen">
-                <h3 class="about-s__icon">17 дюймов</h3>
-                <p class="about-s__icon_small">Большой дисплей</p>
+                <img class="about-s__image-screen" src="img/aboutS/screen.svg" alt="screen">
+                <div class="about-s__screen">
+                  <p class="about-s__screen-title">17 
+                    <span class="about-s__screen-subtitle">дюймов</span>
+                  </p>
+                  <p class="about-s__screen-small">Большой дисплей</p>
+                </div>
               </div>
               <div class="about-s__advantage">
-                <img src="img/aboutS/wifi.jpg" alt="wifi">
-                <h3 class="about-s__icon">Беспроводное обновление ПО</h3>
-                <p class="about-s__icon_small">Повышенная функциональность</p>
+               <img class="about-s__image-wifi" src="img/aboutS/wifi.svg" alt="wifi">
+               <div class="about-s__wifi">
+                <p class="about-s__wifi-text">Беспроводное обновление ПО</p>
+                <p class="about-s__wifi_subtext">Повышенная функциональность</p>
+               </div> 
               </div>
               <div class="about-s__advantage">
-                <img src="img/aboutS/bag.jpg" alt="bag">
-                <h3 class="about-s__icon">894 литра</h3>
-                <p class="about-s__icon_small">Объем грузового пространства</p>
+                <img class="about-s__image-bag" src="img/aboutS/bag.svg" alt="bag">
+                <div class="about-s__bag">
+                  <p class="about-s__bag-title">894 
+                    <span class="about-s__bag-subtitle">литра</span>
+                  </p>
+                  <p class="about-s__bag_small">Объем грузового пространства</p>
+                </div>
               </div>
             </div>
             <div class="about-s__learn-more">
-              <img src="img/aboutS/learn-more.jpg" alt="learn-more">
-              <div class="about-s__learn-more-title">Узнать больше</div>
+              <img src="img/aboutS/learn-more.svg" alt="learn-more">
+              <p class="about-s__learn-more-title">Узнать больше</p>
               <button class="about-s__learn-more-button">Заказать</button>
             </div>
           </div>
@@ -102,56 +114,75 @@
       <section class="safety">
         <div class="safety__column">
           <div class="safety__block">
-            <div class="item__safety">
-              <h3 class="item__safety-title">Самый безопасный автомобиль в мире</h3>
-              <p class="item__safety-text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
+            <div class="safety__item">
+              <h3 class="safety__item-title">Самый безопасный автомобиль в мире</h3>
+              <p class="safety__item-text">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
             </div>
-            <div class="protection__safety">
-              <h3 class="protection__safety-title">Оценка защиты</h3>
-              <div class="protection__safety-block">
+            <div class="safety__protection">
+              <h3 class="safety__protection-title">Оценка защиты:</h3>
+              <div class="safety__protection-block">
                 <div class="item__protection">
                   <div class="item__protection-title">Спереди</div>
+                  <div class="item__protection-title">Сбоку</div>
                   <div class="item__protection-title">Сбоку <span class=item__protection-subtitle>(стойка)</span></div>
                   <div class="item__protection-title">Водитель</div>
                   <div class="item__protection-title">Пассажир</div>
                 </div>
                 <div class="stars__protection">
-                  <div class="stars__protection-row1">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                  <div class="stars__protection-row">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </div>
-                  <div class="stars__protection-row2">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                  <div class="stars__protection-row">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </div>
-                  <div class="stars__protection-row3">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                  <div class="stars__protection-row">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </div>
-                  <div class="stars__protection-row4">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                  <div class="stars__protection-row">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </div>
-                  <div class="stars__protection-row5">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                  <div class="stars__protection-row">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="security__safety">
-              <img src="img/safety/security.jpg" alt="wifi">
-              <h3 class="security__safety-title">5 звёзд</h3>
-              <p class="security__safety-text">безопасности</p>
+            <div class="safety__security">
+              <img src="img/safety/security.svg" alt="wifi">
+              <p class="safety__security-title">5 звёзд
+                <span class="safety__security-text">безопасности</span>
+              </p>
             </div>
-            <div class="learn-more__safety">
-              <img src="img/safety/learn-more.jpg" alt="learn-more">
-              <div class="learn-more__safety-title">Узнать больше</div>
-              <button class="learn-more__safety-button">Заказать</button>
+            <div class="safety__learn-more">
+              <img src="img/safety/learn-more.svg" alt="learn-more">
+              <div class="safety__learn-more-title">Узнать больше</div>
+              <button class="safety__learn-more-button">Заказать</button>
             </div>
           </div>
         </div>
-        <div class="safety__photo-frame">
-          <h2 class="safety__title">Model S</h2>
-          <img src="img/safety/car-frame-group.jpg" alt="carframe">
-        </div>
-        <div class="whs">
-            <img src="img/safety/whs.jpg" alt="whs">
+        <div class="safety__models">
+          <div class="safety__frame"></div>
+          <div class="safety__whs"></div>
         </div>
       </section>
     </main>
