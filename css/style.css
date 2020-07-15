@@ -16,13 +16,17 @@ body {
 }
 
 .header {
-  margin: 0 auto;
+  padding: 22px 0 0 45px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 105px);
-  margin: 22px 60px 54px 45px;
+  width: 100%;
+  margin: 0 0 54px 0;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
 /*
@@ -114,7 +118,6 @@ body {
   width: 55px;
   border: none;
   background: transparent;
-  
 }
 
 .header__button:hover {
@@ -126,6 +129,7 @@ body {
   display: flex;
   height: 15px;
   align-items: center;
+  padding-right: 60px;
 }
 
 .header__burger-line {
@@ -389,7 +393,6 @@ body {
   animation-timing-function: linear;
 }
 
-/*
 @keyframes animate {
   0% {
     margin-top: 2px;
@@ -401,7 +404,6 @@ body {
     margin-top: 2px;
   }
 }
-*/
 
 .about-s {
   margin: 0;
@@ -877,12 +879,13 @@ body {
 
 @media screen and (max-width:770px) {
   .header {
-    margin: 2px 35px 74px 15px;
-    width: calc(100% - 50px);
+    margin: 0 0 74px 0;
+    padding: 2px 35px 0 15px;
+    background-color: #fff;
   }
   
   .header__burger {
-    padding-bottom: 5px;
+    padding: 0 0 5px 0;
   }
   
   .header__burger-line {
@@ -1210,271 +1213,292 @@ body {
     line-height: 20px;
   }
   
-  @media screen and (max-width:747px) {
-    .about-s__future {
-      padding: 0 10px 0 20px;
-    }
+@media screen and (max-width:747px) {
+  .about-s__future {
+    padding: 0 10px 0 20px;
+  }
     
-    .about-s__advantages {
-      padding: 0 0 45px 10px;
-    }
+  .about-s__advantages {
+    padding: 0 0 45px 10px;
+  }
     
-    .safety__item {
-      padding: 0 10px 0 20px;
-    }
+  .safety__item {
+    padding: 0 10px 0 20px;
+  }
     
-    .safety__protection {
-      padding: 0 0 0 10px;
-    }
+  .safety__protection {
+    padding: 0 0 0 10px;
+  }
+}
+  
+@media screen and (max-width:650px) {
+  .welcome {
+    min-height: 790px;
+  }
+    
+  .about-s__advantages, 
+  .about-s__learn-more, 
+  .safety__protection, 
+  .safety__learn-more {
+    display: none;
+  }
+    
+  .about-s__column, .safety__column {
+    height: auto;
+    min-height: 304px;
+  }
+    
+  .about-s__future, .safety__item {
+    flex: 0 0 100%;
+    padding: 0 20px 0 20px
+  }
+    
+  .about-s__future-title, .safety__item-title {
+    text-align: center;
+  }
+}
+  
+@media screen and (max-width:550px) {
+  .welcome__inner {
+    min-width: 370px;
+  }
+    
+  .speed-menu {
+    margin-right: 12px;
+  }
+}
+  
+@media screen and (max-width:440px) {
+  .header {
+    margin: 0 0 17px 0;
+    padding: 5px 0 0 2px;
+    background-color: #fff;
+  }
+    
+  .header__logo img {
+    width: 138px;
+    height: 42px;
   }
   
-  @media screen and (max-width:650px) {
-    .welcome {
-      min-height: 790px;
-    }
+  .header__burger {
+    padding-right: 20px;
+  }
     
-    .about-s__advantages, 
-    .about-s__learn-more, 
-    .safety__protection, 
-    .safety__learn-more {
-      display: none;
-    }
+  .header__burger-line {
+    width: 24px;
+  }
     
-    .about-s__column, .safety__column {
-      height: auto;
-      min-height: 304px;
-    }
+  .header__burger-line::before {
+    top: -6px;
+  }
     
-    .about-s__future, .safety__item {
-      flex: 0 0 100%;
-      padding: 0 20px 0 20px
-    }
+  .header__burger-line::after {
+    top: 6px;
+  }
     
-    .about-s__future-title, .safety__item-title {
-      text-align: center;
-    }
+  .welcome {
+    background-image: url(../img/mobil/tesla_car.svg);
+    background-position: center 35%;
+    background-size: 95%;
+    min-height: 535px;
+  }
+    
+  .welcome__logo {
+    width: 100%;
+    height: 139px;
+    position: absolute;
+    background-image: url(../img/mobil/tesla_logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 180px;
+  }
+    
+  .welcome__title {
+    font-size: 50px;
+    line-height: 61px;
+    padding-top: 10px;
+  }
+    
+  .welcome__text {
+    margin: -3px 0px 0px 0px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+    
+  .welcome__footer {
+    padding-bottom: 30px;
+  }
+    
+  .welcome__inner {
+    min-width: 295px;
+    margin-bottom: 38px;
+    justify-content: flex-start;
+  }
+    
+  .speed-menu {
+    margin-right: 32px;
+    width: 127px;
+  }
+    
+  .speed-menu__image {
+    margin: 0;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 30px;
+    background-position: center;
+  }
+    
+  .speed-menu__items {
+    padding-left: 14px;
+  }
+    
+  .speed-menu__title {
+    font-size: 27px;
+    line-height: 33px;
+    align-items: baseline;
+  }
+    
+  .speed-menu__subtitle {
+    font-size: 15px;
+    line-height: 18px;
+  }
+    
+  .speed-menu__text {
+    font-size: 10px;
+    line-height: 1px;
+  }
+    
+  .power-reserv {
+    width: 115px;
+  }
+    
+  .power-reserv__image {
+    margin: 0;
+    width: 25.29px;
+    height: 41px;
+    background-position: center;
+    background-size: 50%;
+  }
+    
+  .power-reserv__items {
+    padding-left: 4px;
+  }
+    
+  .power-reserv__title {
+    margin: 0;
+    padding-top: 4px;
+    font-size: 27px;
+  }
+    
+  .power-reserv__subtitle {
+    padding: 18px 0px 0px 9px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+    
+  .power-reserv__text {
+    font-size: 10px;
+    line-height: 1px;
+  }
+    
+  .test-drive {
+    min-width: 303px;
+    justify-content: flex-start;
+    margin-bottom: 1px;
+  }
+    
+  .test-drive__image {
+    width: 22px;
+    height: 25px;
+    background-position: center;
+    background-size: 100%;
+    flex: 0 0 22px;
+    margin-right: 5px;
+  }
+    
+  .test-drive__text {
+    min-width: 90px;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: 'Montserrat-Bold';
+    padding-right: 26px;
+  }
+    
+  .test-drive__button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+    
+  .about-s__photo-cockpit {
+    background-image: url(../img/mobil/tesla_model-s_cockpit.jpg);
+    background-repeat: no-repeat;
+    background-position: center -38px;
+    background-size: 100%;
+    height: 288px;
+  }
+    
+  .about-s__title {
+    display: none;
+  }
+    
+  .about-s__block {
+    padding: 17px 0 0 0;
+  }
+    
+  .about-s__future {
+    padding: 0 20px 0 28px;
+  }
+    
+  .about-s__future-title {
+    text-align: unset;
+  }
+    
+  .about-s__future-text {
+    padding-top: 10px;
+  }
+    
+  .safety__block {
+    padding: 17px 0 0 0;
+  }
+    
+  .safety__item {
+    padding: 0 20px 0 30px;
+  }
+    
+  .safety__item-title {
+    text-align: unset;
+  }
+    
+  .safety__models {
+    height: 294px;
+    background-size: 105%;
+    background-position: 0% 9%;
+  }
+    
+  .safety__frame {
+    left: -15px;
+    top: 55px;
+  }
+}
+  
+@media screen and (max-width: 375px) {
+  .about-s__photo-cockpit {
+    background-position: center;
   }
   
-  @media screen and (max-width:550px) {
-    .welcome__inner {
-      min-width: 370px;
-    }
-    
-    .speed-menu {
-      margin-right: 12px;
-    }
+  .about-s__future, 
+  .safety__item {
+    padding-bottom: 25px;
   }
   
-  @media screen and (max-width:440px) {
-    .header {
-      margin: 5px 0 17px 2px;
-      width: calc(100% - 23px);
-    }
-    
-    .header__logo img {
-      width: 138px;
-      height: 42px;
-    }
-    
-    .header__burger-line {
-      width: 24px;
-    }
-    
-    .header__burger-line::before {
-      top: -6px;
-    }
-    
-    .header__burger-line::after {
-      top: 6px;
-    }
-    
-    .welcome {
-      background-image: url(../img/mobil/tesla_car.svg);
-      background-position: center 35%;
-      background-size: 95%;
-      min-height: 535px;
-    }
-    
-    .welcome__logo {
-      width: 100%;
-      height: 139px;
-      position: absolute;
-      background-image: url(../img/mobil/tesla_logo.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      padding-top: 180px;
-    }
-    
-    .welcome__title {
-      font-size: 50px;
-      line-height: 61px;
-      padding-top: 10px;
-    }
-    
-    .welcome__text {
-      margin: -3px 0px 0px 0px;
-      font-size: 10px;
-      line-height: 12px;
-    }
-    
-    .welcome__footer {
-      padding-bottom: 30px;
-    }
-    
-    .welcome__inner {
-      min-width: 295px;
-      margin-bottom: 38px;
-      justify-content: flex-start;
-    }
-    
-    .speed-menu {
-      margin-right: 32px;
-      width: 127px;
-    }
-    
-    .speed-menu__image {
-      margin: 0;
-      flex: 0 0 40px;
-      width: 40px;
-      height: 30px;
-      background-position: center;
-    }
-    
-    .speed-menu__items {
-      padding-left: 14px;
-    }
-    
-    .speed-menu__title {
-      font-size: 27px;
-      line-height: 33px;
-      align-items: baseline;
-    }
-    
-    .speed-menu__subtitle {
-      font-size: 15px;
-      line-height: 18px;
-    }
-    
-    .speed-menu__text {
-      font-size: 10px;
-      line-height: 1px;
-    }
-    
-    .power-reserv {
-      width: 115px;
-    }
-    
-    .power-reserv__image {
-      margin: 0;
-      width: 25.29px;
-      height: 41px;
-      background-position: center;
-      background-size: 50%;
-    }
-    
-    .power-reserv__items {
-      padding-left: 4px;
-    }
-    
-    .power-reserv__title {
-      margin: 0;
-      padding-top: 4px;
-      font-size: 27px;
-    }
-    
-    .power-reserv__subtitle {
-      padding: 18px 0px 0px 9px;
-      font-size: 15px;
-      line-height: 18px;
-    }
-    
-    .power-reserv__text {
-      font-size: 10px;
-      line-height: 1px;
-    }
-    
-    .test-drive {
-      min-width: 303px;
-      justify-content: flex-start;
-      margin-bottom: 1px;
-    }
-    
-    .test-drive__image {
-      width: 22px;
-      height: 25px;
-      background-position: center;
-      background-size: 100%;
-      flex: 0 0 22px;
-      margin-right: 5px;
-    }
-    
-    .test-drive__text {
-      min-width: 90px;
-      font-size: 13px;
-      line-height: 16px;
-      font-family: 'Montserrat-Bold';
-      padding-right: 26px;
-    }
-    
-    .test-drive__button {
-      padding: 0;
-      margin: 0;
-      border: 0;
-      width: 160px;
-      height: 40px;
-      font-size: 13px;
-      line-height: 16px;
-    }
-    
-    .about-s__photo-cockpit {
-      background-image: url(../img/mobil/tesla_model-s_cockpit.jpg);
-      background-repeat: no-repeat;
-      background-position: center -38px;
-      background-size: 100%;
-      height: 288px;
-    }
-    
-    .about-s__title {
-      display: none;
-    }
-    
-    .about-s__block {
-      padding: 17px 0 0 0;
-    }
-    
-    .about-s__future {
-      padding: 0 20px 0 28px;
-    }
-    
-    .about-s__future-title {
-      text-align: unset;
-    }
-    
-    .about-s__future-text {
-      padding-top: 10px;
-    }
-    
-    .safety__block {
-      padding: 17px 0 0 0;
-    }
-    
-    .safety__item {
-      padding: 0 20px 0 30px;
-    }
-    
-    .safety__item-title {
-      text-align: unset;
-    }
-    
-    .safety__models {
-      height: 294px;
-      background-size: 105%;
-      background-position: 0% 9%;
-    }
-    
-    .safety__frame {
-      left: -15px;
-      top: 55px;
-    }
+  .test-drive__text {
+    padding-right: 15px;
+    justify-content: space-between;
+  }
 }
