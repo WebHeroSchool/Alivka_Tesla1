@@ -16,13 +16,13 @@ body {
 }
 
 .header {
-  padding: 22px 0 0 45px;
+  padding: 0 0 0 45px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 0 54px 0;
+  margin: 22px 0 54px 0;
   position: sticky;
   top: 0;
   background-color: #fff;
@@ -879,8 +879,8 @@ body {
 
 @media screen and (max-width:770px) {
   .header {
-    margin: 0 0 74px 0;
-    padding: 2px 35px 0 15px;
+    margin: 2px 0 74px 0;
+    padding: 0 35px 0 15px;
   }
   
   .header__burger {
@@ -1269,8 +1269,8 @@ body {
   
 @media screen and (max-width:440px) {
   .header {
-    margin: 0 0 17px 0;
-    padding: 5px 0 0 2px;
+    margin: 5px 0 17px 0;
+    padding: 0 0 0 2px;
   }
     
   .header__logo img {
